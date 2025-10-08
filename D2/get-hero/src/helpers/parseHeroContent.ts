@@ -19,12 +19,5 @@ interface HeroContent {
  * Maps it to a Hero object.
  */
 export const parseHeroContent = (objectResponse: SuiObjectResponse): Hero => {
-  const content = objectResponse.data?.content as unknown as HeroContent;
-  const fields = content.fields;
-
-  return {
-    id: fields.id.id,
-    health: fields.health,
-    stamina: fields.stamina,
-  } as Hero;
+  // Implement the function to parse the hero content
 };
